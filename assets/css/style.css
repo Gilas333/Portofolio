@@ -1,0 +1,122 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.hero{
+    display: flex;
+    gap: 30px;
+    padding: 100px 150px;
+    background-image: linear-gradient(to right, rgba(79, 114, 111, 0.836) 30%,rgb(83, 238, 142) 50%, rgb(6, 119, 81) 70%);
+    
+    
+}
+
+.hero-picture img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+.hero-description button{
+    padding: 20px 30px;
+    background-color: rgb(6, 150, 83);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: none;
+
+    
+}
+
+.card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 0;
+    padding: 20px;
+}
+
+ .box-3{
+    
+     padding: 20px;
+     border-radius: 10px;
+     flex: 1;
+     margin-top: 0;
+}
+
+.box-1{
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-top: 0;
+}
+
+.riwayat-pendidikan{
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.riwayat-pendidikan-data{
+    
+    padding-left: 10px;
+    margin-bottom: 10px;
+   
+    
+
+}
+
+.riwayat-pendidikan-data p{
+    margin: 0;
+   
+    
+}
+
+
+
+.footer{
+    display: flex;
+    gap: 30px;
+    padding: 30px 30px;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: italic;
+    background-image: linear-gradient(to right, rgba(79, 114, 111, 0.836) 30%,rgb(83, 238, 142) 50%);
+    font-weight: bold;
+    overflow: auto;
+
+    
+   
+}
+
+.footer-logo img{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    float: left;
+
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        display: block;
+        text-align: center;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-3, .box-1, .riwayat-pendidikan, .riwayat-pendidikan-data{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    footer, .footer-logo img{
+        align-items: center;
+    }
+}
+
