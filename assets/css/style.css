@@ -7,7 +7,7 @@ body{
     display: flex;
     gap: 30px;
     padding: 100px 150px;
-    background-image: linear-gradient(to right, rgba(79, 114, 111, 0.836) 30%,rgb(83, 238, 142) 50%, rgb(6, 119, 81) 70%);
+    background-image: linear-gradient(to right,rgb(113, 116, 117) 30%,rgba(31, 148, 156, 0.842) 50%);
     
     
 }
@@ -23,15 +23,16 @@ body{
 
 .hero-description button{
     padding: 20px 30px;
-    background-color: rgb(6, 150, 83);
+    background-color: rgb(42, 73, 214);
     color: rgb(0, 0, 0);
     border-radius: 20px;
     border: none;
+    
 
     
 }
 
-.card{
+.container{
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -56,6 +57,7 @@ body{
 
 .riwayat-pendidikan{
     width: 100%;
+    font-style: italic;
     text-align: center;
     
     
@@ -64,8 +66,7 @@ body{
     
     padding-left: 10px;
     margin-bottom: 10px;
-   
-    
+
 
 }
 
@@ -85,38 +86,46 @@ body{
     border-radius: 5px;
     font-size: 20px;
     font-style: italic;
-    background-image: linear-gradient(to right, rgba(79, 114, 111, 0.836) 30%,rgb(83, 238, 142) 50%);
+    background-image: linear-gradient(to right, grey 30%,rgba(50, 160, 168, 0.836));
     font-weight: bold;
     overflow: auto;
+}
 
-    
+.contact{
+    font-style: italic;
+    text-align: center;
    
 }
 
 .footer-logo img{
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
-    float: left;
-
+    text-align: left;
+    margin-right: 10%;
 }
 
+
 @media screen and (max-width: 900px) {
-    .hero {
+    .hero{
         display: block;
         text-align: center;
     }
-    .card{
+    .container{
+        margin: 50px;
+        display: block;
+        text-align: center;
+    }
+    .riwayat-pendidikan, .riwayat-pendidikan-data{
         flex-direction: column;
         align-items: center;
     }
-    .box-3, .box-1, .riwayat-pendidikan, .riwayat-pendidikan-data{
-        width: 100px;
-        margin-bottom: 20px;
-    }
-    footer, .footer-logo img{
-        align-items: center;
+    .footer, .footer-logo img{
+        display: block;
+        text-align: center
+        
     }
 }
+
 
