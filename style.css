@@ -1,0 +1,131 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.hero{
+    display: flex;
+    gap: 30px;
+    padding: 100px 150px;
+    background-image: linear-gradient(to right,rgb(113, 116, 117) 30%,rgba(31, 148, 156, 0.842) 50%);
+    
+    
+}
+
+.hero-picture img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+.hero-description button{
+    padding: 20px 30px;
+    background-color: rgb(42, 73, 214);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: none;
+    
+
+    
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 0;
+    padding: 20px;
+}
+
+ .box-3{
+    
+     padding: 20px;
+     border-radius: 10px;
+     flex: 1;
+     margin-top: 0;
+}
+
+.box-1{
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-top: 0;
+}
+
+.riwayat-pendidikan{
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    
+    
+}
+.riwayat-pendidikan-data{
+    
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.riwayat-pendidikan-data p{
+    margin: 0;
+   
+    
+}
+
+
+
+.footer{
+    display: flex;
+    gap: 30px;
+    padding: 30px 30px;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: italic;
+    background-image: linear-gradient(to right, grey 30%,rgba(50, 160, 168, 0.836));
+    font-weight: bold;
+    overflow: auto;
+}
+
+.contact{
+    font-style: italic;
+    text-align: center;
+   
+}
+
+.footer-logo img{
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    text-align: left;
+    margin-right: 10%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hero{
+        display: block;
+        text-align: center;
+    }
+    .container{
+        margin: 50px;
+        display: block;
+        text-align: center;
+    }
+    .riwayat-pendidikan, .riwayat-pendidikan-data{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer, .footer-logo img{
+        display: block;
+        text-align: center
+        
+    }
+}
+
+
